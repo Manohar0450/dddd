@@ -18,7 +18,7 @@ if (!GEMINI_API_KEY) {
   process.exit(1); // Exit process if API key is missing
 }
 
-const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key${GEMINI_API_KEY}`;
+const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${GEMINI_API_KEY}`;
 
 app.post("/chat", async (req, res) => {
   try {
